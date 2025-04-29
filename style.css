@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    transition: all 0.3s ease-in; 
+}
+
+
+header .logo a{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    margin: 2px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+
+header nav ul{
+    
+    display: flex;
+    
+}
+
+header nav ul li {
+    margin-right: 3em;
+    
+}
+
+header nav ul li a {
+    
+    color: #fff;
+    font-size: 16px;
+}
+
+header, .hero {
+    background-image: url('images/hero_md.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+
+
+header .bouton1 {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #fff;
+    box-shadow: 1px 1px 5px #EDFF81;
+    border-radius: 1.5em;
+    padding: .8em 1.5em;
+}
+
+header .bouton1:hover {
+    background-color: #0E1F17;
+}
+
+
+.hero {
+    text-align: center;
+    padding-top: 3em;
+    transition: all 0.3s ease-in-out; 
+}
+
+.hero .titres {
+    color: white;
+    padding: 3em;
+}
+
+.hero .titres h3 {
+    font-size: 36px;  
+    margin-bottom: .7em;
+    opacity: 60%;
+}
+
+.hero .titres h3::before {
+    border: 1px solid black;
+}
+
+
+.hero .titres h3::after {
+    border: 1px solid black;
+}
+
+
+.hero .titres h1 {
+    font-size: 90px;
+   
+}
+
+.hero .titres p{
+    padding-top: 2em;
+    opacity: 60%;
+    font-size:1.3em;
+    line-height: 1.6em;
+}
+
+.hero button, .services .role .role-text button, .article .articles .content .read-more {
+    background-color: transparent;
+    margin: 5em 0 8em 0;
+    border-radius: 2em;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    background-color: #a7c94bea;
+    justify-content: center;
+    align-items: center;
+}
+.hero button:hover, .services .role .role-text button:hover{
+    background-color: rgba(27, 82, 27, 0.815);
+}
+
+/* 
+.hero .titres h1 span {
+    background-color: #a7c94bea;
+   
+} */
+
+.partenaires {
+    padding: 2em;
+   background-color:  #F6FBF9;
+}
+
+.partenaires .liste_partenaires {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+.partenaires .liste_partenaires li{
+    margin: 1em 5em ;
+    
+}
+
+.partenaires .liste_partenaires li img {
+    display: block;
+    opacity: 20%;   
+}
+
+.services{
+    position: relative;
+    padding: 60px 20px;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 8em;
+    max-width: 1200px;
+}
+
+.services .container .description {
+    width: 40%; 
+    
+}
+
+
+.services .container .description h1 {
+    font-size: 40px;
+    padding-bottom: .6em;
+    font-weight: bold;
+}
+
+.services .container .description p{
+    font-size: 20px;
+    color: #78847D;
+    text-align: justify;
+    margin-bottom: 2em;
+    line-height: 1.5em;
+}
+
+.services .container .description .see-more, .help .see-more {
+    color: #A3B938;
+    font-size: 20px;
+    
+    text-decoration: underline;
+
+}
+
+.services .container .text-services {
+    width: 60%;
+    animation: all 0.8s ease-out;
+}
+
+.services .container .text-services .line {
+    display: flex;
+    gap: 2em;
+    
+}
+
+.services .container .text-services .line1{
+    margin-bottom: 4em;
+}
+
+
+.services .container .text-services .line li h1{
+    font-size: 24px;
+    margin-top: 1em;
+}
+
+
+.services .container .text-services .line li p, .services .role-text p {
+    margin-top: 1em;
+    color: #78847D;
+    line-height: 1.5em;
+}
+
+.services .role {
+    margin-top: 8em;
+}
+
+
+.services .role .role-text {
+    margin-left: 9em;
+    margin-top: 2em;
+}
+
+
+.services .role .role-text h1 {
+    font-size: 40px;
+    margin-top: 1em;
+   
+}
+
+.services .role .role-text p {
+    font-size: 20px;
+    margin-top: 1.5em;
+}
+
+.help {
+     background-color:  #F6FBF9;
+     /* border: 1px solid green; */
+     text-align: center;
+     margin-bottom: 1.5em;
+     padding-bottom: 3em;
+     
+}
+
+.help .help-content{
+    padding-top: 5em;
+}
+
+.help .help-content h1 {
+    font-size: 40px;
+    
+}
+
+.help .help-content p {
+    font-size: 20px;
+    color: #78847D;
+    margin-top: 1em;
+}
+
+.help .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12em;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    position: relative;
+
+}
+
+.help .steps .step {
+    text-align: center;
+    max-width: 150px;
+    
+}
+
+
+.help .steps .step .icon {
+    width: 6em;
+    height: 6em;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 1px black;
+    
+}
+
+.help .steps .step .circle {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 2px black;
+    margin-top: 2em;
+}
+
+
+
+.help .steps .step .title {
+    font-size: 18px;
+}
+
+.help .steps .step .title1{
+    font-weight: bold;
+}
+
+.help .steps .step .title2, .help .steps .step .title3, .help .steps .step .title4 {
+    color: #253D32;
+   margin-top: 1.5em;
+}
+
+.article {
+    max-width: 1200px;
+    margin: auto;
+    margin-top:  5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article .container .text-titres {
+    display: flex;
+    justify-content: space-between;
+    gap: 20em;
+    align-items: center;
+    
+}
+
+.article .container .text-titres .titre {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.article .container .text-titres .liens-content {
+    display: flex;
+    justify-content: end;
+    margin-top: 3em;
+    
+}
+
+.article .container .text-titres .liens-content li {
+    padding-left: 2em;
+   
+}
+
+.article .container .text-titres .liens-content li a {
+    color: #808371;
+    font-size: 18px;
+}
+
+.article .container .text-titres .liens-content .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.article .container .text-titres .liens-content .active .line2 {
+    content: "";
+    border: 2px solid #98AA28;
+    width: 5em;
+    margin-top: .5em;
+
+}
+
+.article .articles {
+    display: flex;
+}
+
+.article .articles .content{
+    
+    padding-top: 4em;
+    margin-left: 1.2em;
+    margin-right: .5em;
+    
+}
+
+.article .articles .content p {
+    color: #808371;
+}
+
+.article .articles .content .marketing-img, .article .articles .content .copywriting-img, .article .articles .content .seo-img{
+    padding-bottom: .8em;
+}
+
+.article .articles .content .seo-text {
+    font-size: 18px;
+}
+
+.article .articles .content .copywriting-text, .article .articles .content .marketing-text {
+    font-size: 14px;
+} 
+
+.article .articles .content h1 {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.article .articles .content .seo-title{
+    line-height: 1em;
+}
+
+.article .articles .content .text {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.article .articles .content .read-more {
+    background-color: transparent;
+    color: #98AA28;
+    border: 1px solid #A3B938;
+}
+
+.article .articles .content .icon {
+   
+    width: 1px;
+    height: 40px;
+    border: 1px solid #A3B938;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.article .articles .content .icon img {
+    width: 5em;
+    height: 2em;
+    color: #A3B938;
+}
+
+
+.article .articles .content .read-more, .article .articles .content .icon {
+    margin-top: 1em;
+}
+
+/* souscription*/
+
+.souscription {
+    background-image: url('images/hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    
+
